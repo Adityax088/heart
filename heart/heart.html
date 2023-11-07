@@ -1,78 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ddd;
-        }
-
-        .long-g {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 10px;
-        }
-
-        .grow-ans {
-            display: block;
-            position: relative;
-            width: 200px;
-            height: 200px;
-            margin: 20px;
-            overflow: hidden;
-        }
-
-        .leaf {
-            position: absolute;
-            background-color: #8e8e8e;
-            width: 50px;
-            height: 50px;
-            transform-origin: bottom center;
-            animation: grow 4s infinite;
-        }
-
-        @keyframes grow {
-            0% {
-                transform: scaleY(0);
-            }
-            100% {
-                transform: scaleY(1);
-            }
-        }
-
-        .leaf:nth-child(odd) {
-            animation-duration: 5s;
-        }
-
-        .leaf:nth-child(2n) {
-            animation-duration: 6s;
-        }
-
-        .leaf:nth-child(3n) {
-            animation-duration: 7s;
-        }
-
-        .leaf:nth-child(4n) {
-            animation-duration: 8s;
-        }
-
-        .leaf:nth-child(5n) {
-            animation-duration: 9s;
-        }
-
-        .leaf:nth-child(6n) {
-            animation-duration: 10s;
-        }
-
-        .leaf:nth-child(7n) {
-            animation-duration: 11s;
-        }
-
-        .leaf:nth-child(8n) {
-            animation-duration: 12s;
-        }
-
-        .leaf:nth-child(9n) {
-           
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growing Leaves</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="growing-leaves">
+        <div class="long-g">
+            <div class="grow-ans leaf1"></div>
+            <div class="grow-ans leaf2"></div>
+            <div class="grow-ans leaf3"></div>
+        </div>
+        <div class="long-g">
+            <div class="grow-ans leaf4"></div>
+            <div class="grow-ans leaf5"></div>
+            <div class="grow-ans leaf6"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
